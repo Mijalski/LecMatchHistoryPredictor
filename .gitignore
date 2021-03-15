@@ -1,2 +1,4 @@
 LecMatchHistoryPredictor/bin/
 LecMatchHistoryPredictor/obj/
+*/obj/*
+.vs/
