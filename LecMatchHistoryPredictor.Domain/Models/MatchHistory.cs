@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LecMatchHistoryPredictor.Scraping.Models
+namespace LecMatchHistoryPredictor.Domain.Models
 {
     public class MatchHistory
     {

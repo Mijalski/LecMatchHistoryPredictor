@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
-using LecMatchHistoryPredictor.Scraping.Models;
+using LecMatchHistoryPredictor.Domain.Models;
 using LecMatchHistoryPredictor.Scraping.Savers;
 using Microsoft.Extensions.Logging;
 

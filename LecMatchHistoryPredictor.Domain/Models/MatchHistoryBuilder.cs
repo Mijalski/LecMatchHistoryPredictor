@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LecMatchHistoryPredictor.Scraping.Models
+namespace LecMatchHistoryPredictor.Domain.Models
 {
     public class MatchHistoryBuilder
     {

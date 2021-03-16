@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using LecMatchHistoryPredictor.Scraping.Models;
+using LecMatchHistoryPredictor.Domain.Models;
 
 namespace LecMatchHistoryPredictor.Scraping.Savers
 {
@@ -18,8 +18,8 @@ namespace LecMatchHistoryPredictor.Scraping.Savers
         {
             var lines = matches.Select(_ =>
                 $"{_.MatchDateTime};{_.WinnerTeam.Name};{_.LoserTeam.Name};{_.WinnerTeam.Side};{_.LoserTeam.Side}" +
-                $";{string.Join(';', _.WinnerTeam.Roster)};{string.Join(';', _.LoserTeam.Roster)}" +
-                $";{string.Join(';', _.LoserTeam.Picks)};{string.Join(';', _.LoserTeam.Picks)}");
+                $";{string.Join(',', _.WinnerTeam.Roster)};{string.Join(',', _.LoserTeam.Roster)}" +
+                $";{string.Join(',', _.LoserTeam.Picks)};{string.Join(',', _.LoserTeam.Picks)}");
 
             if (File.Exists(fileName))
             {

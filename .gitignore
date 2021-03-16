@@ -2,3 +2,5 @@ LecMatchHistoryPredictor/bin/
 LecMatchHistoryPredictor/obj/
 */obj/*
 .vs/
+LecMatchHistoryPredictor.Domain/bin/Debug/net5.0/LecMatchHistoryPredictor.Domain.deps.json
+*/bin/*
